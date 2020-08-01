@@ -11,7 +11,7 @@ Programa creado para poner a prueba los conocimientos
 adquiridos durante la clase
 '''
 
-__author__ = "Inove Coding School"
+__author__ = "Emmanuel O. Torres Molina"
 __email__ = "alumnos@inove.com.ar"
 __version__ = "1.1"
 
@@ -28,23 +28,47 @@ def ej1():
 
     # Compare cual de los dos números es mayor
     # Imprima en pantalla según corresponda
+    if numero_1 > numero_2:
+        print('\nEl Número {} es Mayor al Número {}.\n'.format(numero_1, numero_2))
+
+    else:
+        print('\nEl Número {} es Mayor al Número {}.\n'.format(numero_2, numero_1))
 
     # Verifique si el numero_1 positivo, negativo o cero
     # Imprima el resultado en cada caso
+    if numero_1 > 0:
+        print('El 1er Número Ingresado: {}, es Positivo.\n'.format(numero_1))
+
+    elif numero_1 < 0:
+        print('El 1er Número Ingresado: {}, es Negativo.\n'.format(numero_1))
+
+    else:
+        print('El 1er Número Ingresado es 0.\n\n')
 
     # Verifique si el numero_1 es mayor a 0 y menor a 100
     # Imprima en pantalla si se cumple o no la condición
+    if (numero_1 > 0) and (numero_1 < 100):
+        print('El 1er Número Ingresado: {}, es Mayor a 0 y Menor a 100.\n'.format(numero_1))
+
+    else:
+        print('El 1er Número Ingresado: {}, No es Mayor a 0 y Menor a 100.\n'.format(numero_1))
 
     # Verifique si el numero_1 es menor a 10 o el numero_2
     # es mayor a -2
     # Imprima en pantalla si se cumple o no la condición
+    if (numero_1 < 10) or (numero_2 > -2):
+        print('Se Cumple la Condición de que el 1er Nro. Ingresado sea Menor a 10 o que el 2do Nro. Ingresado sea Mayor a -2.\n')
+
+    else:
+        print('No se Cumple la Condición de que el 1er Nro. Ingresado sea Menor a 10 o que el 2do Nro. Ingresado sea Mayor a -2.\n')
+
 
 
 def ej2():
     # Ejemplos variables de texto
 
     # Comparadores
-    # Ingrese dos palabras cualesquiera y realice las sigueintes
+    # Ingrese dos palabras cualesquiera y realice las siguientes
     # comparaciones entre ellas
     texto_1 = str(input('Ingrese la primera palabra:\n'))
 
@@ -125,8 +149,8 @@ def ej4():
     # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
 
 if __name__ == '__main__':
-    print("Bienvenidos a otra clase de Inove con Python")
-    #ej1()
+    print("Bienvenidos a otra clase de Inove con Python.\n\n")
+    ej1()
     #ej2()
     #ej3()
     #ej4()
