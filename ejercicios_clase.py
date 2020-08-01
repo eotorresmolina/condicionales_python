@@ -76,14 +76,25 @@ def ej2():
 
     # Compare cual de las dos palabras es mayor (alfabéticamente)
     # Imprima en pantalla según corresponda
+    if texto_1 > texto_2:
+        print('El Texto 1 Ingresado: "{}" es Mayor al Texto 2 Ingresado: "{}"\n'.format(texto_1, texto_2))
+
+    else:
+        print('El Texto 2 Ingresado: "{}" es Mayor al Texto 1 Ingresado: "{}"\n'.format(texto_2, texto_1))
 
     # Compare cual de las dos palabras tiene mayor
     # cantidad de letras
     # Imprima en pantalla según corresponda
+    if len(texto_1) > len(texto_2):
+        print('El Texto 1: "{}" Tiene mayor Cant. de Letras o Caracteres que el Texto 2: "{}"\n'. format(texto_1, texto_2))
+        
+    else:
+        print('El Texto 2: "{}" Tiene mayor Cant. de Letras o Caracteres que el Texto 1: "{}"\n'. format(texto_2, texto_1))
 
     # Verifique si la primera letra de la primera palabra
     # es mayor a la primera letra de la segunda palabra
     # Imprima en pantalla según corresponda
+    
 
     copia_texto_1 = texto_1  # Copia de la variable texto_1
 
@@ -150,7 +161,7 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python.\n\n")
-    ej1()
-    #ej2()
+    #ej1()
+    ej2()
     #ej3()
     #ej4()
