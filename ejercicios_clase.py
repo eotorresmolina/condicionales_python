@@ -175,13 +175,27 @@ def ej4():
     texto_1 = '5'
     texto_2 = '7'
 
-    # Verifique cual cual de los dos textos es mayor alfabéticamente
+    # Verifique cual de los dos textos es mayor alfabéticamente
     # Imprima en pantalla según corresponda
+    if texto_1 > texto_2:
+        print('\nEl Texto 1: "{}" es Mayor al Texto 2 :"{}".\n'.format(texto_1, texto_2))
+
+    else:
+        print('\nEl Texto 2: "{}" es Mayor al Texto 1: "{}".\n'.format(texto_2, texto_1))
 
     # Transforma esas variables tipo texto y almacénalas
     # en nuevas variables númericas (int)
     # Repita el proceso, ¿Cuál de las nuevas variables es mayor?
     # Imprima en pantalla según corresponda
+
+    nro_1 = int(texto_1)
+    nro_2 = int(texto_2)
+
+    if nro_1 > nro_2:
+        print('El Número {} es Mayor al Número {}.\n'.format(nro_1, nro_2))
+
+    else:
+        print('El Número {} es Mayor al Número {}.\n'.format(nro_2, nro_1))
 
     # Para pensar!
     # ¿Por qué cree que texto_2 es mayor a texto_1?
@@ -191,10 +205,16 @@ def ej4():
     # Esta pregunta estará repetida en el Campus para que puedan
     # responder.
     # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
+    
+    #RTA: Esto sucede porque las variables de tipo string son una cadena de caracteres o
+    #     simplemente un solo caracter, y, cada caracter posee un valor entero ascii definido. Entonces
+    #     al evaluar y comparar los caracteres, en realidad se está comparando el valor ascii de los
+    #     caracteres.
+    #     En este caso, el caracter '7' posee un valor ascii mayor al caracter '5'
 
 if __name__ == '__main__':
-    print("Bienvenidos a otra clase de Inove con Python.\n\n")
-    #ej1()
-    #ej2()
+    print("\nBienvenidos a otra clase de Inove con Python.\n\n")
+    ej1()
+    ej2()
     ej3()
-    #ej4()
+    ej4()
