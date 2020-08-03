@@ -44,7 +44,7 @@ def ej1():
 
 
 def ej2():
-  print('Ejercicios de práctica con números')
+  print('\nEjercicios de práctica con números:\n')
 
   '''
     Realice un programa que solicite el ingreso de tres números
@@ -53,9 +53,37 @@ def ej2():
     Para cada caso imprimir el resultado en pantalla.
   '''
 
+  print('\nIngrese un Número Entero:')
+  nro_1 = int(input( ))
+
+  print('\nIngrese un 2do Número Entero:')
+  nro_2 = int(input( ))
+
+  print('\nIngrese un 3er Número Entero:')
+  nro_3 = int(input( ))
+
+  if (nro_1 % 2) == 0:
+    print('\n\nEl 1er Número Ingresado es Par.')
+  else:
+    print('\n\nEl 1er Número Ingresado es Impar.')
+
+
+  if (nro_2 % 2) == 0:
+    print('\nEl 2do Número Ingresado es Par.')
+  else:
+    print('\nEl 2do Número Ingresado es Impar.')
+
+  
+  if (nro_3 % 2) == 0:
+    print('\nEl 3er Número Ingresado es Par.\n\n')
+  else:
+    print('\nEl 3er Número Ingresado es Impar.\n\n')
+  
+
+
 
 def ej3():
-  print('Ejercicios de práctica con números')
+  print('Ejercicios de práctica con números:\n\n')
 
   '''
     Realice una calculadora, se ingresará por línea de comando dos números
@@ -70,6 +98,9 @@ def ej3():
     Se debe efectuar el cálculo correcto según la operación ingresada por consola
     Imprimir en pantalla la operación realizada y el resultado
   '''
+
+  
+
 
 
 def ej4():
@@ -104,8 +135,8 @@ def ej5():
 
 if __name__ == '__main__':
   print("\nEjercicios de práctica:\n")
-  ej1()
-  #ej2()
+  #ej1()
+  ej2()
   #ej3()
   #ej4()
   #ej5()
