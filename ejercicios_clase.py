@@ -94,15 +94,33 @@ def ej2():
     # Verifique si la primera letra de la primera palabra
     # es mayor a la primera letra de la segunda palabra
     # Imprima en pantalla según corresponda
+    if texto_1[0] > texto_2[0]:
+        print('La 1ra Letra de la 1ra Palabra es Mayor a la 1ra Letra de la 2da Palabra.\n')
+
+    elif texto_1[0] < texto_2[0]:
+        print('La 1ra Letra de la 2da Palabra es Mayor a la 1ra Letra de la 1ra Palabra.\n')
+
+    else:
+        print('La 1ra Letra de la 1ra Palabra es Igual a la 1ra Letra de la 2da Palabra.\n')
     
 
     copia_texto_1 = texto_1  # Copia de la variable texto_1
 
     # Verifique que copia_texto_1 es igual a texto_1
     # Imprima en pantalla según corresponda
+    if copia_texto_1 == texto_1:
+        print('Ambas Palabras: "{}" y "{}" son Iguales.\n'.format(copia_texto_1, texto_1))
+
+    else:
+        print('Las Palabras:"{}" y "{}" son Distintas.\n'.format(copia_texto_1, texto_1))
 
     # Verifique que copia_texto_1 es distinta a texto_2
     # Imprima en pantalla según corresponda
+    if copia_texto_1 != texto_2:
+        print('Las Palabras: "{}" y "{}" son Distintas.\n'.format(copia_texto_1, texto_2))
+
+    else:
+        print('Las Palabras: "{}" y "{}"  son Iguales.\n'.format(copia_texto_1, texto_2))
 
 
 def ej3():
@@ -130,7 +148,7 @@ def ej3():
     # Si el puntaje es mayor igual a 80 --> imprimir B
     # Si el puntaje es mayor igual a 70 --> imprimir C
     # Si el puntaje es mayor igual a 60 --> imprimir D
-    # Si el puntaje es manor a  60      --> imprimir F
+    # Si el puntaje es menor a  60      --> imprimir F
 
     # Debe imprimir en pantalla la calificacion
     # Utilizar "if" anidados
