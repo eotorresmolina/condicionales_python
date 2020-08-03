@@ -99,12 +99,48 @@ def ej3():
     Imprimir en pantalla la operación realizada y el resultado
   '''
 
-  
+  print("Ingrese un Número Real:")
+  numero_1 = float(input( ))
+
+  print("\nIngrese Otro Número Real:")
+  numero_2 = float (input( ))
+
+  print('\n\nAhora Ingrese el Símbolo de la Operación que Desee Calcular:\n')
+  print('Suma (+)')
+  print('Resta (-)')
+  print('Multiplicación (*)')
+  print('División (/)')
+  print('Exponente/Potencia (**)\n')
+  print('Ingrese el Símbolo: ')
+  simbolo = str(input( ))
+
+  if simbolo == '+':
+    result = numero_1 + numero_2
+    print('\n\nEl Símbolo Ingresado es:"{}" y el Resultado de la Operación es: {}.'.format(simbolo, result))
+
+  elif simbolo == '-':
+    result = numero_1 - numero_2
+    print('\n\nEl Símbolo Ingresado es:"{}" y el Resultado de la Operación es: {}.\n\n'.format(simbolo, result))
+
+  elif simbolo == '*':
+    result = numero_1 * numero_2
+    print('\n\nEl Símbolo Ingresado es: "{}" y el Resultado de la Operación es: {}.\n\n'.format(simbolo, result))
+
+  elif simbolo == '/':
+    result = numero_1 / numero_2
+    print('\n\nEl Símbolo Ingresado es: "{}" y el Resultado de la Operación es: {}.\n\n'.format(simbolo, result))
+
+  elif simbolo == '**':
+    result = numero_1 ** numero_2
+    print('\n\nEl Símbolo Ingresado es: "{}" y el Resultado de la Operación es: {}.\n\n'.format(simbolo, result))
+
+  else:
+    print('\n\nEl Símbolo Ingresado: "{}" es un Símbolo Matemático Incorrecto.\n\n'.format(simbolo))
 
 
 
 def ej4():
-  print('Ejercicios de práctica con cadenas')
+  print('Ejercicios de práctica con cadenas:\n\n')
 
   '''
     Realice un programa que solicite por consola 3 palabras cualesquiera
@@ -136,7 +172,7 @@ def ej5():
 if __name__ == '__main__':
   print("\nEjercicios de práctica:\n")
   #ej1()
-  ej2()
-  #ej3()
+  #ej2()
+  ej3()
   #ej4()
   #ej5()
