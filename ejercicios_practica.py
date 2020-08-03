@@ -155,6 +155,88 @@ def ej4():
     e imprimir en pantalla de la mayor a la menor
   '''
 
+  print('Ingrese una 1er Palabra:')
+  palabra_1 = str(input( ))
+  
+  print('\nIngrese una 2da Palabra:')
+  palabra_2 = str(input ( ))
+
+  print('\nIngrese una 3ra Palabra:')
+  palabra_3 = str(input( ))
+
+  print('\n\nAhora Ingrese El Número Según como quiera Ordenar las Palabras:\n')
+  print('1 - Ordenar por Orden Alfabético.')
+  print('2 - Ordenar por Cantidad de Letras.')
+
+  print('\nIngrese el Número Correspondiente:')
+  opcion = int(input( ))
+
+  if opcion == 1:
+    print("\n\nLas Palabras Ingresadas Ordenadas de Mayor a Menor:\n")
+
+    if ((palabra_1 >= palabra_2) and (palabra_2 >= palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_1, palabra_2, palabra_3))
+
+    elif ((palabra_1 >= palabra_2) and (palabra_2 < palabra_3) and (palabra_1 >= palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_1, palabra_3, palabra_2))
+
+    elif ((palabra_1 < palabra_2) and (palabra_1 >= palabra_3) and (palabra_2 >= palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_2, palabra_1, palabra_3))
+    
+    elif ((palabra_1 < palabra_2) and (palabra_1 < palabra_3) and (palabra_2 >= palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_2, palabra_3, palabra_1))
+
+    elif ((palabra_1 < palabra_2) and (palabra_1 < palabra_3) and (palabra_2 < palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_3, palabra_2, palabra_1))
+
+    elif ((palabra_1 >= palabra_2) and (palabra_1 < palabra_3) and (palabra_2 < palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_3, palabra_1, palabra_2))
+
+    else:
+      print("'{}' '{}' '{}'".format(palabra_1, palabra_2, palabra_3))
+
+    print('\n\n')
+
+  elif opcion == 2:
+    print("\n\nLas Palabras Ingresadas Ordenadas de Mayor a Menor:\n")
+
+    len_palabra_1 = len(palabra_1)
+    len_palabra_2 = len(palabra_2)
+    len_palabra_3 = len(palabra_3)
+
+    if ((len_palabra_1 >= len_palabra_2) and (len_palabra_2 >= len_palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_1, palabra_2, palabra_3))
+
+    elif ((len_palabra_1 >= len_palabra_2) and (len_palabra_2 < len_palabra_3)
+    and (len_palabra_1 >= len_palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_1, palabra_3, palabra_2))
+
+    elif ((len_palabra_1 < len_palabra_2) and (len_palabra_1 >= len_palabra_3) 
+    and (len_palabra_2 >= len_palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_2, palabra_1, palabra_3))
+    
+    elif ((len_palabra_1 < len_palabra_2) and (len_palabra_1 < len_palabra_3) 
+    and (len_palabra_2 >= len_palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_2, palabra_3, palabra_1))
+
+    elif ((len_palabra_1 < len_palabra_2) and (len_palabra_1 < len_palabra_3) 
+    and (len_palabra_2 < len_palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_3, palabra_2, palabra_1))
+
+    elif ((len_palabra_1 >= len_palabra_2) and (len_palabra_1 < len_palabra_3) 
+    and (len_palabra_2 < len_palabra_3)):
+      print("'{}' '{}' '{}'".format(palabra_3, palabra_1, palabra_2))
+
+    else:
+      print("'{}' '{}' '{}'".format(palabra_1, palabra_2, palabra_3))
+
+    print('\n\n')
+
+  else:
+    print('\n\nLa Opción Ingresada No es Válida.\n\n')
+
+
+
 
 def ej5():
   print('Ejercicios de práctica con números')
@@ -173,6 +255,6 @@ if __name__ == '__main__':
   print("\nEjercicios de práctica:\n")
   #ej1()
   #ej2()
-  ej3()
-  #ej4()
+  #ej3()
+  ej4()
   #ej5()
