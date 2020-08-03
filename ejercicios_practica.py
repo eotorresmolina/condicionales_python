@@ -197,6 +197,7 @@ def ej4():
 
     print('\n\n')
 
+
   elif opcion == 2:
     print("\n\nLas Palabras Ingresadas Ordenadas de Mayor a Menor:\n")
 
@@ -232,6 +233,7 @@ def ej4():
 
     print('\n\n')
 
+
   else:
     print('\n\nLa Opción Ingresada No es Válida.\n\n')
 
@@ -239,7 +241,7 @@ def ej4():
 
 
 def ej5():
-  print('Ejercicios de práctica con números')
+  print('\nEjercicios de práctica con Números:\n\n')
 
   '''
     Realice un programa que solicite ingresar tres valores de temperatura
@@ -251,10 +253,54 @@ def ej5():
     En cada caso imprimir en pantalla el resultado
   '''
 
+  print('Ingresar 3 Valores de Temperaturas [°C]:\n\n')
+  
+  print('Ingrese el 1er Valor de Temperatura:')
+  temp_1 = float(input( ))
+
+  print('\nIngresar el 2do Valor de Temperatura:')
+  temp_2 = float(input( ))
+
+  print('\nIngresar el 3er Valor de Temperatura:')
+  temp_3 = float(input( ))
+
+
+  if ((temp_1 >= temp_2) and (temp_1 >= temp_3)):
+    print('\n\n1 - La Máxima Temperatura es: {} °C'.format(temp_1))
+
+  elif ((temp_2 >= temp_1) and (temp_2 >= temp_3)):
+    print('\n\n1 - La Máxima Temperatura es: {} °C'.format(temp_2))
+
+  elif ((temp_3 >= temp_1) and (temp_3 >= temp_2)):
+    print('\n\n1 - La Máxima Temperatura es: {} °C'.format(temp_3))
+
+  elif ((temp_1 == temp_2) and (temp_2 == temp_3)):
+      print('\n\n1 - La Máxima Temperatura es: {} °C'.format(temp_1))
+
+
+
+  if ((temp_1 <= temp_2) and (temp_1 <= temp_3)):
+    print('\n2 - La Mínima Temperatura es: {} °C'.format(temp_1))
+
+  elif ((temp_2 <= temp_1) and (temp_2 <= temp_3)):
+    print('\n2 - La Mínima Temperatura es: {} °C'.format(temp_2))
+
+  elif ((temp_3 <= temp_1) and (temp_3 <= temp_2)):
+    print('\n2 - La Mínima Temperatura es: {} °C'.format(temp_3))
+
+  elif ((temp_1 == temp_2) and (temp_2 == temp_3)):
+      print('\n2 - La Mínima Temperatura coincide con la Máxima Temperatura y es: {} °C'.format(temp_1))
+
+
+  promedio_temp = (temp_1 + temp_2 + temp_3) / 3
+  print('\n3 - El Promedio de Temperatura es: {:.2f} °C\n\n\n'.format(promedio_temp))
+
+ 
+
 if __name__ == '__main__':
   print("\nEjercicios de práctica:\n")
-  #ej1()
-  #ej2()
-  #ej3()
+  ej1()
+  ej2()
+  ej3()
   ej4()
-  #ej5()
+  ej5()
