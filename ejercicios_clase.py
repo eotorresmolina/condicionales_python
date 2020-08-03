@@ -140,6 +140,21 @@ def ej3():
     #       --> En caso afirmativo imprima en pantalla "Resp=3"
     #       --> En caso negativo imprima en pantalla "Resp=4"
 
+    if numero_1 > 5:
+        if numero_2 > 0:
+            print('\nResp = 1\n')
+        else:
+            print('\nResp = 2\n')
+
+    else:
+        if numero_2 > 5:
+            print('\nResp = 3\n')
+
+        else:
+            print('\nResp = 4\n')
+
+
+
     # Verifique la calificación de un estudiante según su
     # puntaje en un examen
     puntaje = 70
@@ -180,6 +195,6 @@ def ej4():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python.\n\n")
     #ej1()
-    ej2()
-    #ej3()
+    #ej2()
+    ej3()
     #ej4()
