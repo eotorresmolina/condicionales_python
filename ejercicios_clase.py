@@ -168,6 +168,21 @@ def ej3():
     # Debe imprimir en pantalla la calificacion
     # Utilizar "if" anidados
 
+    if puntaje >= 90:
+        print ('\nA\n')
+
+    elif puntaje >= 80:
+        print('\nB\n')
+
+    elif puntaje >= 70:
+        print('\nC\n')
+
+    elif puntaje >= 60:
+        print('\nD\n')
+
+    else:
+        print('\nF\n')
+
 
 def ej4():
     # Ejemplos variables de texto
