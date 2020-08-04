@@ -31,6 +31,9 @@ def ej1():
     if numero_1 > numero_2:
         print('\nEl Número {} es Mayor al Número {}.\n'.format(numero_1, numero_2))
 
+    elif numero_1 == numero_2:
+        print('\nLos Números Ingresados son Iguales.\n')
+
     else:
         print('\nEl Número {} es Mayor al Número {}.\n'.format(numero_2, numero_1))
 
@@ -51,7 +54,7 @@ def ej1():
         print('El 1er Número Ingresado: {}, es Mayor a 0 y Menor a 100.\n'.format(numero_1))
 
     else:
-        print('El 1er Número Ingresado: {}, No es Mayor a 0 y Menor a 100.\n'.format(numero_1))
+        print('El 1er Número Ingresado: {}, No es Mayor a 0 y/o no es Menor a 100.\n'.format(numero_1))
 
     # Verifique si el numero_1 es menor a 10 o el numero_2
     # es mayor a -2
@@ -79,6 +82,9 @@ def ej2():
     if texto_1 > texto_2:
         print('El Texto 1 Ingresado: "{}" es Mayor al Texto 2 Ingresado: "{}"\n'.format(texto_1, texto_2))
 
+    elif texto_1 == texto_2:
+        print('Los Textos Ingresados son Iguales.\n')
+
     else:
         print('El Texto 2 Ingresado: "{}" es Mayor al Texto 1 Ingresado: "{}"\n'.format(texto_2, texto_1))
 
@@ -88,6 +94,9 @@ def ej2():
     if len(texto_1) > len(texto_2):
         print('El Texto 1: "{}" Tiene mayor Cant. de Letras o Caracteres que el Texto 2: "{}"\n'. format(texto_1, texto_2))
         
+    elif len(texto_1) == len (texto_2):
+        print('Los Textos Ingresados Tienen la Misma Cantidad de Letras y/o Caracteres.\n')
+
     else:
         print('El Texto 2: "{}" Tiene mayor Cant. de Letras o Caracteres que el Texto 1: "{}"\n'. format(texto_2, texto_1))
 
